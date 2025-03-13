@@ -3,25 +3,7 @@
    <head>
      <title>Peto_Shop</title>
      <link rel="icon" type="image/x-icon" href="cat.ico"> 
-     <style>
-        table
-         {
-            font-family:arial;
-            border-collapse:collapse;
-            width:1000px;
-         }
-       td,th
-        {
-          border: 1px solid powderblue;
-          text-align:left;
-          padding: 8px
-
-        }
-       tr:nth-child(even)
-       {
-           background-color:lightblue;
-       }
-     </style>
+     <link rel="stylesheet" type="text/css" href="style.css">
    </head>
    <body>
    <header>
@@ -31,6 +13,7 @@
        <a href="#aboutus">About Us</a>
        <a href="#gallery">Gallery</a>
        <a href="#contactus">Contact us</a>
+       <a href="#SignUP">Sign Up</a>
        <a href="mailto:priyankapruthe@gmail.com">Email Us</a>
      </nav>
      <hr/>
@@ -101,10 +84,106 @@ I longed for more challenges and more knowledge. Then I heard about man who, in 
       
    <table>
 </section>
+<hr>
 <section id="contactus">
+  
+ <div class="form-container">
+     <h3>Contact Us</h3>
+    <form action="demo.html" method="post">
+       <div class="form-group">
+      <label for="username">Name </label>
+      <input  type="text" id="username" placeholder="enter your name" required/>
+      </div>
+   
+      <div class="form-group">
+      <label for="userEmail">Email </label>
+      <input type="email" id="userEmail" placeholder="enter your emailid" required/>
+      </div>
 
-   <h5>contact us</h5>
+     <!-- <div class="form-group">    
+      <label> Please select either its query or suggestion</label>
+            <input type="radio" id="query" name="user_choice" value="query"/> <label for="query">Query</label><br/>
+      <input type="radio" id="suggestion" name="user_choice" value="suggestion"/> <label for="suggestion">Suggestion</label>
+      </div>-->
+
+     <div class="form-group">
+     <label for="query">Query/Suggestion</label>
+     <textarea id="query" row=5></textarea>
+     <div>
+    
+     <div class="form-group">
+  
+      <button class="btn" type="submit">Submit</button>
+      <button class="btn" type="reset">Reset</button>
+     </div>
+     </form>
+</div>
+  
 </section>
+
+<section id="SignUP">
+  
+ <div class="form-container">
+     <h3>Sign Up</h3>
+    <form action="demo.html" method="post">
+       <div class="form-group">
+      <label for="username">Name </label>
+      <input  type="text" id="username" placeholder="enter your name" required/>
+      </div>
+   
+     
+     <div class="form-group">
+     <label for="dob">Date Of birth</label>
+     <input type="datetime-local" id="dob"/>     
+     <div>
+ 
+      <div class="form-group">
+      <label for="userEmail">Email </label>
+      <input type="email" id="userEmail" placeholder="enter your emailid" required/>
+      </div>
+
+       <div class="form-group">
+      <label for="userPassword">Password </label>
+      <input type="password" id="userPassword" placeholder="password" required/>
+      </div>
+
+       <div class="form-group">
+      <label for="gender">Gender </label>
+      <select id="gender">
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+        <option value="o">Other</option>
+
+      </select>
+      </div>
+    
+      <div class="form-group">
+      <label for="language">Language </label>
+      <input list="languages" type="text" id="userPassword" placeholder="start typing..." required/>
+      <datalist id="languages">
+       <option value="en">English</option>
+       <option value="hi">Hindi</option>
+
+      <option value="es">Spanish</option>
+
+<option value="Fr">French</option>
+
+<option value="Jp">Japnese</option>
+
+      </datalist>
+      </div>
+
+    
+     <div class="form-group">
+  
+      <button class="btn" type="submit">Submit</button>
+      <button class="btn" type="reset">Reset</button>
+     </div>
+     </form>
+</div>
+  
+</section>
+
  
    </body>
 </html>
